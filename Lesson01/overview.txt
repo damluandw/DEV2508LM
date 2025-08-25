@@ -1,0 +1,20 @@
+1. HTML (3 buổi)
+- dùng các thẻ
+- bố cục nội dung các thẻ
+2. CSS (2-3 buổi)
+- cách sử dụng CSS
+- các thuộc tính CSS
+- mức độ ưu tiên khi sử dụng các bộ chọn CSS (quan trọng)
+- Responsive
+3. JavaScript (1-2 buổi)
+- ngôn ngữ lập trình kịch bản
+- biến, mảng, object
+- vòng lặp
+- cấu trúc điều khiển
+- hàm
+4. DOM/Jquerry (2 buổi)
+- Tương tác giữa ngôn ngữ lập trình Javascript với HTML/CSS
+5. Bootstrtap (1 buổi)
+- Thư viện xây dựng sẵn (CSS/Javascript/DOM/Jquerry)
+6. Photoshop (1 buổi)
+- cut ảnh, đo bảng màu, đo kích thước, cỡ chữ font chữ
