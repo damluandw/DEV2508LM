@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+        <form action enctype="multipart/form-data" method="post">
+            <!-- Input kiểu text -->
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" value="Devmaster" size="30">
+            <br>
+            <!-- Input kiểu passwword -->
+            <label for="password">password</label>
+            <input type="password" name="password" id="password"
+                placeholder="nhập giá trị">
+            <!-- Input kiểu hiden -->
+            <input type="hidden" name id>
+
+            <!-- input kiểu checkbox -->
+            <br>
+            <label>Sở thích: </label>
+            <label for="choigame">Chơi game</label>
+            <input type="checkbox" name="hobby" id="choigame" checked>
+            <label for="chaybo">Chạy bộ</label>
+            <input type="checkbox" name="hobby" id="chaybo">
+            <label for="caulong">Cầu lông</label>
+            <input type="checkbox" name="hobby" id="caulong">
+            <label for="dabong">Đá bóng</label>
+            <input type="checkbox" name="hobby" id="dabong">
+
+            <!-- input kiểu radio -->
+            <br>
+            <label for>Giới tính</label>
+            <label for="nam">Nam</label>
+            <input type="radio" name="gioitinh" id="nam" checked>
+            <label for="nu">Nữ</label>
+            <input type="radio" name="gioitinh" id="nu">
+            <label for="khac">Khác</label>
+            <input type="radio" name="gioitinh" id="khac">
+            <!-- INput kiểu button -->
+            <br>
+            <input type="button" name="dangky" id="dangky" value="Đăng ký">
+            <!-- <input type="submit" name="dangky" id="dangky" value="Đăng ký"> -->
+
+            <!-- Input kiểu reset -->
+            <input type="reset" name="reset" id="reset" >
+            <!-- Kiểu file -->
+            <input type="file" name="img" id="img">
+            <!-- Kiểu date - tự thực hành -->
+
+            <!-- Kiểu number -->
+            <br>
+            <label for="age">Tuổi</label>
+            <input type="number" name="age" id="age">
+            <!-- Kiểu email -->
+            <br>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+            <!-- Kiểu range -->
+            <input type="range" name="tyle" id="tyle" min="0" max="100"
+                value=20 >
+            <!-- select - option-->
+            <br><label for="noisinh">Nơi sinh</label>
+            <select name="noisinh" id="noisinh">
+                <option value="HN">Hà Nội</option>
+                <option value="HP">Hà Phòng</option>
+                <option value="QN">Quảng Ninh</option>
+                <option value="HY">Hưng Yên</option>
+            </select>
+            <!-- Textarea -->
+             <br>
+             <label for="mota">Mô tả</label>
+             <!-- <textarea name="mota" id="mota"  style="width: 200px; height: 50px;"></textarea> -->
+             <textarea rows="5" cols="30" name="mota" id="mota"  ></textarea>
+        </form>
+    </body>
+</html>

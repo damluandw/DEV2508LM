@@ -1,0 +1,25 @@
+1. Tạo tài khoản git
+
+2. Cài đặt git bash
+
+3. Config trên máy ng dùng
+    git config --global user.name "Your Name"
+    git config --global user.email "your.email@example.com"
+4. Tạo dự án trên github.com
+
+5. Lấy dữ liệu về máy:
+    git clone đường_dẫn_html_đến_dự_án_trên_github
+
+6. Đưa nội dung/ sửa trong dự án đã được clone về
+
+7. Up dữ liệu lên github
+
+    git add .
+
+    git commit -m "nội dung thêm/sửa/xóa"
+
+    git push
+
+8. Lấy dữ liệu/đồng bộ lại dữ liệu đã làm ở máy khác
+
+    git pull

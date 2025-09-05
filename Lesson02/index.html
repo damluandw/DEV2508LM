@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table</title>
+    </head>
+    <body>
+        <table border="1" cellspacing="0" cellpadding="6">
+            <caption>Tiêu đề bảng</caption>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>MSV</th>
+                    <th>Họ và tên</th>
+                    <th>Ngày sinh</th>
+                    <th>Điểm Toán</th>
+                    <th>Điểm Hóa</th>
+                    <th>Điểm Lý</th>
+                    <th>Điểm trung bình</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td align="center">1</td>
+                    <td>SV01</td>
+                    <td>Minh Quang</td>
+                    <td>15/08/2003</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td rowspan="2">7</td>
+                </tr>
+                <tr>
+                    <td align="center">2</td>
+                    <td>SV02</td>
+                    <td>Đức Khiêm</td>
+                    <td>16/07/2002</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <!-- <td>7</td> -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- <td></td> -->
+                    <td colspan="4">Trung bình</td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td>7.5</td>
+                    <td>7</td>
+                    <td>5.5</td>
+                    <td>7</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
