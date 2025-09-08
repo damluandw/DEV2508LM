@@ -1,0 +1,32 @@
+1. Table
+<table>
+    <thead>
+        <tr>
+            <th></th>
+        </tr>
+    </thead>
+     <tbody>
+        <tr>
+            <td></td>   
+        </tr>
+        <tr>
+             <td></td>   
+        </tr>
+        ...
+    </tbody>
+     <tfoot>
+        <tr>
+             <td></td>   
+        </tr>
+    </tfoot>
+</table>
+
+- border, cellspacing, cellpadding, align=""
+- colspan, rowspan
+2. Form
+- thuộc tính của thẻ form: action, method, encrypt
+- <input type="" name="" id=""/>
+    + type: text, password, hide, file, date, radio, checkbox, range, number, email,...
+    + một số thuộc tính khác: value, max, min, placeholder, checked, size
+- <select name="" id=""><option value=""> ....  <option> </select> 
+- <texarea cols="" rows=""/>

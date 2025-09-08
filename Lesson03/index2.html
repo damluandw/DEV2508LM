@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bố cục trang web</title>
+        <style>
+            header nav ul{
+                display: flex;
+            }
+            ul{
+                list-style: none;
+            }
+            ul li {
+                padding: 0 1rem;
+            }
+            a{
+                text-decoration: none;
+            }
+            header,section,footer{
+                border: solid 1px #000;
+            }
+            footer{
+                /* float: left; */
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Begin Header -->
+        <header>
+            <!-- logo trang web -->
+            <!-- Điều hướng fb/youtube -->
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- End Header -->
+        <!-- Begin Banner -->
+        <section>
+            <article>
+                <p>Giới thiệu về khóa học lập trình</p>
+                <p>Nội dung khóa học</p>
+            </article>
+        </section>
+        <!-- End Banner -->
+        <!-- Begin Produt-->
+        <section>
+            <div class="box-prouduct">
+                Sản phẩm 1
+            </div>
+
+            <div class="box-prouduct">
+                Sản phẩm 2
+            </div>
+
+            <div class="box-prouduct">
+                Sản phẩm 3
+            </div>
+
+            <div class="box-prouduct">
+                Sản phẩm 4
+            </div>
+
+        </section>
+        <!-- End Produt-->
+        <!-- Begin Footer -->
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                </ul>
+            </nav>
+            <div>
+                <address>
+                    Địa chỉ của công ty
+                </address>                
+            </div>
+            <div>
+                <p>thông tin liên hệ</p>
+                <p>bản quyền</p>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </body>
+</html>
