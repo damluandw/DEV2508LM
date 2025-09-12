@@ -1,0 +1,9 @@
+1. Bô cục nội dung của 1 trang
+- 3 phần chính
+    - headear 
+    - section (nhiều section)
+    - footer
+- các phần phụ:
+    - nav
+    - aside/articale
+    - div, p,...

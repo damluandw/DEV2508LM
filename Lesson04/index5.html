@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <style>
+            #menu-2{
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: rgb(172, 165, 165);
+                width: 250px;
+                border: 1px solid;
+                border-top: none;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            ul{
+                list-style: none;
+                padding: 0;
+            }
+
+            a{
+                text-decoration: none;
+                color: #000;                
+            }
+
+            #menu-1>ul{
+                display: flex;
+            }
+            #menu-1>ul>li{
+                padding: 8px;
+                background-color: rgb(172, 165, 165);
+                border-left: 2px solid red;
+                position: relative;
+            }
+            #menu-1>ul :first-child{
+                border-left: none;
+            }
+            #menu-1 ul>li:hover{
+                background-color: green;
+            }
+            #menu-1 ul>li:hover>a{
+                color: #fff;
+            } 
+             #menu-1 ul>li:hover #menu-2{
+                display: block;
+             }
+
+            #menu-2>ul>li{
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="menu-1">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li>
+                    <a href="#">Khóa học</a>
+                    <nav id="menu-2">
+                        <ul>
+                            <li><a href="#">Lập trình web với ngôn ngữ
+                                    PHP</a></li>
+                            <li><a href="#">Lập trình web NetCore</a></li>
+                            <li><a href="#">Lập trình web Java Spring
+                                    Boot</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Hỗ trợ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

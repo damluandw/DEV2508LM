@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cú pháp CSS tương tác với HTML</title>
+        <style>
+            /* Cách 1: Tương tác thông qua tên thẻ HTML */
+            /* Systax: tên_thẻ_HTML{...} */
+            p{
+                color: red  ;
+            }
+            /* Cách 2: Tương tác thông qua tên id của thẻ HTML */
+            /* Systax: #tên_id_của_thẻ_HTML{...} */
+            #color-blue{
+                color: blue;
+            }
+            /* Cách 3: Tương tác thông qua tên class của thẻ HTML */
+            /* Systax: .tên_class_của_thẻ_HTML */
+            .cl-green{
+                color: green;
+            }
+            /* Cách 4: Tương tác thông qua tên thuộc tính của thẻ HTML */
+            /* Systax: [tên_thuộc_tính] */
+            [type="text"]{
+                border: 2px solid blue;
+            }
+            [class-x]{
+               color: green; 
+            }
+
+
+            /* ,------------ */
+            p{
+                color: yellow ;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Cách 1: Tương tác thông qua tên thẻ HTML -->
+        <div id="cach1">
+            <p>Tương tác thông qua tên thẻ HTML</p>
+            <div>
+                <p>Tương tác thông qua tên thẻ HTML</p>
+            </div>
+        </div>
+        <!-- Cách 2: Tương tác thông qua tên id của thẻ HTML -->
+        <div id="cach2">
+            <p id="color-blue">Tương tách thông qua id của thẻ HTML</p>
+        </div>
+        <!-- Cách 3: Tương tác thông qua tên class của thẻ HTML -->
+        <div id="cach3">
+            <p class="cl-green">Tương tác thông qua class của thẻ HTML</p>
+            <h3 class="cl-green">Tương tác thông qua class của thẻ HTML</h3>
+        </div>
+        <!-- Cách 4: Tương tác thông qua tên thuộc tính của thẻ HTML -->
+        <div id="cach4">
+            <input type="text" name="username" id="username">
+            <input type="text" name="email" id="email">
+            <input type="password" name="password" id="password">
+            <p class-x="cl-green-x">
+                Tương tác thông qua tên thuộc tính của thẻ HTML
+            </p>
+            <p class-x>
+                Tương tác thông qua tên thuộc tính của thẻ HTML
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+1. Mức độ ưu tiên trong CSS:
+    - CSS viết sau sẽ được ưu tiên sử dụng (trỏ_cùng_tên)
+    - !important -> tên_id -> tên_class -> tên_thuộc_tính -> tên_thẻ_HTML
+    - Trỏ càng kỹ/ càng gần tên thẻ thì sẽ càng được ưu tiên
+
+2.Đơn vị em/rem
+- trong 1 trang khai báo font size =16px (font-size của thẻ HTML)
+
+=>  1 rem = 16px
+
+=> 1 em = ????
+
+- trong khối cha font size là 20px
+
+=> 1rem = 16px
+=>  1em = 20px
