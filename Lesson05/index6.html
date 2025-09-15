@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu đa cấp</title>
+
+        <style>
+            *{
+                font-size: 16px;
+                padding: 0;
+                margin: 0;
+            }
+            ul{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                color: blueviolet;
+            }
+
+           .menu-2,.menu-3,.menu-4{
+                display: none;
+           }
+           .menu-1{
+                display: flex;
+           }
+           .menu-1>li{
+                position: relative;
+           }
+
+           .menu-1 li{
+                padding: 0.5rem;
+                background-color: #ccc;
+                margin-right: 1px;
+            }
+            .menu-1>li:hover .menu-2{
+                display: block;
+            }
+            .menu-2{
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+
+             .menu-2>li:hover .menu-3,
+             .menu-3>li:hover .menu-4{
+                display: block;
+            }
+            .menu-3,.menu-4{
+                position: absolute;
+                top: 0;
+                left: 100%;
+            }
+         
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <ul class="menu-1">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li>
+                        <a href="#">Sản Phẩm</a>
+                        <ul class="menu-2">
+                            <li>
+                                <a href="#">Sản phẩm 2</a>
+                                <ul class="menu-3">
+                                    <li><a href="#">Sản phẩm 3</a></li>
+                                    <li>
+                                        <a href="#">Sản phẩm 3</a>
+                                        <ul class="menu-4">
+                                            <li><a href="#">Sản phẩm 4</a></li>
+                                            <li><a href="#">Sản phẩm 4</a></li>
+                                            <li><a href="#">Sản phẩm 4</a></li>
+                                            <li><a href="#">Sản phẩm 4</a></li>
+                                            <li><a href="#">Sản phẩm 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Sản phẩm 3</a></li>
+                                    <li><a href="#">Sản phẩm 3</a></li>
+                                    <li><a href="#">Sản phẩm 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Sản phẩm 2</a></li>
+                            <li><a href="#">Sản phẩm 2</a></li>
+                            <li><a href="#">Sản phẩm 2</a></li>
+                            <li><a href="#">Sản phẩm 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>

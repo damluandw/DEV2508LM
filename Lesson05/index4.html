@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                padding: 0;
+                margin: 0;
+            }
+            .w-100{
+                width: 100%;
+            }
+            .container{
+                max-width: 1400px;
+                margin: auto;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            header>.container{
+                display: flex;
+                justify-content: space-between;
+            }
+            header #menu ul{
+                list-style: none;
+                display: flex;
+                height: 100%;
+                align-items: center;
+            }
+            header #menu ul li{
+                padding: 0.8rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            header #menu-mobile{
+                    display: none;
+                }
+             @media (max-width: 575.98px) { 
+                .container{
+                    max-width: 400px;
+                }
+                header .logo{
+                    width: 50px;
+                }
+                header #menu{
+                    display: none;
+                }
+                header #menu-mobile{
+                    display: block;
+                    
+                }
+                header #menu-mobile>div{
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                }
+                
+                #menu-mobile ul{
+                    display: none;
+                    list-style: none;
+                    position: fixed;
+                    /* top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);*/
+                    top: 50px;
+                    left: 50%;
+                    transform: translateX(-50%);  
+                }
+                #menu-mobile ul li{
+                    padding: 0.5rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                #menu-mobile .icon:hover ul{
+                    display: block;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img class="w-100"
+                        src="http://cutuananh.devmaster.vn/images/AnhCat/logo.jpg"
+                        alt="logo">
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Đối tác</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <nav id="menu-mobile">
+                    <div class="icon">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Đối tác</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+    </body>
+</html>

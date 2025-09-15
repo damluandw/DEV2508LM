@@ -1,0 +1,66 @@
+1. Cách sử dụng CSS
+- 3 cách:
+    + trong thẻ HTML: style="tên_thuộc_CSS: Giá_trị_thuộc_tính_CSS;..."
+    + trong file HTML: <style>
+                            cú_pháp_tương_tác_CSS_và_HTML{
+                                tên_thuộc_CSS: Giá_trị_thuộc_tính_CSS;
+                                ...
+                            }
+
+                        </style>
+    + ngoài file HTML: <link src= "đường_dẫn_đến_file.css"/>
+            ++ trong file css: cú_pháp_tương_tác_CSS_và_HTML{
+                                    tên_thuộc_CSS: Giá_trị_thuộc_tính_CSS;
+                                    ...
+                                }
+2. Cách tương tác giữa CSS và HTML
+- thông qua tên thẻ HTML: tên_thẻ
+- thông qua tên id của thẻ HTML: #tên_id
+- thông qua tên class của thẻ HTML: .tên_class
+- thông qua tên thuộc tính của thẻ HTML: [tên_thuộc_tính_HTML]
+
+3. Thứ tự ưu tiên trong CSS
+- CSS viết sau sẽ được ưu tiên sử dụng (cùng tên thẻ tag)
+- !important -> tên_id -> tên_class -> tên_thuộc_tính_HTML -> tên_thẻ
+- cú pháp trỏ càng gần hoặc càng kỹ đến thẻ tag thì càng được ưu tiên sử dụng
+
+4. Một số bộ chọn CSS
+- * <=> html
+- tag01 tag02: trỏ đến tag02 với điều kiện tag02 nằm trong tag01
+- tag01>tag02: trỏ đến tag02 với điều kiện tag02 nằm trong tag01 và chỉ là thẻ con của tag01
+- tag01+tag02: trỏ đến tag02 với điều kiện tag02 nằm liền sau tag01
+- tag01~tag02: trỏ đến tag02 với điều kiện tag02 nằm sau tag01
+- tag01,tag02: trỏ đến cả tag01 và tag02
+- :hover : trỏ chuột
+- :first-child, :last-child : thẻ con trong 
+- :before, :after : tạo thêm 1 khối bất kỳ nội dung của khối sẽ được xác định bằng thuộc tính content
+...
+5. Thuộc tính của CSS
+- color
+- background
+- font
+- text
+- border
+- list-style
+- display
+- width/height - max/min
+- position
+    + top/left/right/bottom
+    + transform
+    + z-index
+- margin/padding
+- cursor
+- opacity
+...
+
+6. Bảng màu:
+- 3 loại màu: 
+            + kiểu tiếng anh
+            + Kiểu RGB
+            + Kiểu ký tự hex
+
+7. đơn vị kích thước
+- Mốt số kích thước thường dùng:  %, px, em, rem
+
+8. Responsive
+
