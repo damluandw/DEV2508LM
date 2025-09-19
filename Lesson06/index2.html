@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS</title>
+    </head>
+    <body>
+        <script>
+        // I. Biến
+        // 1.1. Khai báo biến 
+        // Systax: var tên_biến
+        var username;
+        var userName;
+        var userName09320e;
+        var _userName;
+      
+        // 1.2 Gán giá trị
+        // Systax: tên_biến = giá_trị
+        userName = "Devmaster";
+        var password ="123";
+        var number = 56.5;
+        // 1.3. Sử dụng biến - gọi 
+        // Systax: tên_biến
+        document.writeln(userName);
+        document.writeln(number);
+        //II. Một số hàm
+        // alter(): Hiển thị nội dung
+        alert("Hiển thị nội dung")
+        // confirm(): trả về giá trị đúng sai
+        var temp = confirm("Bạn trên 26 tuổi phải không?")
+        console.log("Bạn trên 26 tuổi:",temp)
+        // prompt(): trả về giá trị vừa nhập
+        var name = prompt("Bạn tên là gì?")
+        console.log("Tên của bạn là:", name)
+        // III. So sánh == và ===
+        var number1 = "123"
+        var number2 = 123
+        // Nếu number1 == number2 => true
+        // Nếu number1 === number2 => fasle
+        // IV. Toán tử gán
+        // Systax: tên_biến phép_toán= giá_trị/tên_biến_khác
+        // <=> tên_biến = tên_biến phép_toán giá_trị/tên_biến_khác
+        number2 += 6;
+        // number2 = number2 +6;
+        document.writeln(number2)
+        // V. Cấu trúc điều khiển
+        // 5.1. If else
+        // Systax:
+        //  if(mệnh_đề_điều_kiện_1){
+        //      khối_lênh_thực_thi_1
+        //  }
+        //  else if(mệnh_đề_điều_kiện_2){
+        //      khối_lênh_thực_thi_1
+        //  }
+        //  else if(mệnh_đề_điều_kiện_3){
+        //      khối_lênh_thực_thi_3
+        //  }
+        //  ...
+        //  else{
+        //       khối_lênh_thực_thi_n+1
+        //  }
+        number1 = 20
+        number2 = 20
+        if(number1>number2){
+            document.writeln("<br/>number1 > number2" )
+        }else if(number1 == number2){
+              document.writeln("<br/>number1 = number2" )
+        }else{
+              document.writeln("<br/>number1 < number2" )
+        }
+        // 5.2.  switch key
+        // Systax:
+        // switch (biến) {
+        //     case giá_trị_1:
+        //         mênh_đề_thực_thi_1;
+        //         break;
+        //     case giá_trị_2:                
+        //         mênh_đề_thực_thi_2;
+        //         break;
+        //     ...
+        //     default:
+        //           mênh_đề_thực_thi_n+1;
+        //         break;
+        // }
+
+        var month=13;
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.writeln("<div>Tháng này có 31 ngày</div>")
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.writeln("<div>Tháng này có 30 ngày</div>")
+                break;
+            case 2:
+                document.writeln("<div>Tháng này có 28 ngày</div>")
+                break;
+            default:
+                document.writeln("<div>Không có thàng nào trong này</div>")
+                break;
+        }
+        // VI. Vòng lặp
+        // 6.1. Vòng lặp for
+        // systax: for(khởi_tạo_biến; mệnh_đề_điều_kiện; biến_tăng/giảm){
+        //          khối_lệnh_thực_thi
+        // }
+        for(let i =0; i<10 ; i++){
+            document.writeln(i,",")
+        }
+        // 6.2. while
+        //  Systax:
+        //  while(mênh_đề_điều_kiện){
+        //      khối_lệnh_thực_thi
+        //  }
+        document.writeln("<br/>while: ");
+        var number3 = 3;
+        while(number3 < 5){
+            document.writeln("true");
+            number3++;
+        }
+        // 6.3. do while
+        // do{
+        //      khối_lệnh_thực_thi
+        //  }while(mênh_đề_điều_kiện)
+        document.writeln("<br/> do while: ");
+        do {
+            document.writeln("true");
+            number3++;
+        } while (number3<5);
+        // 6.4. for in / foreach
+
+        // VII. Mảng
+        // 7.1 Khai báo
+        // Systax: var tên_arr = []
+        //         var tên_arr = [1.5,1,'chuỗi','kiểu_bool',...]
+        var arr =[1,2,3,4,12];
+        // 7.2. Truy xuất 
+        // systax:  tên_arr[vị_trí]
+        document.writeln("<br/> mảng:")
+        for(let i = 0;i < arr.length; i++){
+            document.writeln(arr[i],",")
+        }
+        // 7.3. Gán giá trị
+         // systax:  tên_arr[vị_trí] = giá_trị
+        arr[0] = 50
+
+        document.writeln("<br/> mảng:")
+        for(let i = 0;i < arr.length; i++){
+            document.writeln(arr[i],",")
+        }
+
+        // VIII. Hàm
+        // 8.1 Khai báo
+        // Systax: 
+        //      function tên_hàm(biến_1, biến_2,...){
+        //          mệnh_đề_thực_thi
+        //      }
+        function chialaydu(number1,number2){
+            var kq = number1%number2;
+            return kq
+        }
+        // 8.2 Sử dụng
+        //  systax: tên_hàm(tham_số_1, tham_số_2,...)
+        number = chialaydu(9,5)
+        document.writeln("<br/>giá trị lấy dư là:", number)
+
+        document.writeln("<br/>giá trị lấy dư là:", chialaydu(9,4))
+        document.writeln("<br/>giá trị lấy dư là:", chialaydu(16,4))
+        document.writeln("<br/>giá trị lấy dư là:", chialaydu(10,4))
+        document.writeln("<br/>giá trị lấy dư là:", chialaydu(5,4))
+
+    </script>
+    </body>
+</html>

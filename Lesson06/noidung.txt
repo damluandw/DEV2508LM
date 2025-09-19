@@ -1,0 +1,6 @@
+1. Khai báo, gán giá trị, gọi trị: biến,object, mảng, hàm,...
+2. Cấu trúc điều khiển: if else, switch case
+3. Vòng lặp
+4. Hàm có sẵn: hàm xử lý chuỗi, mảng,...
+
+5. Tương tác với nội dung trang  HTML/CSS => DOM/Jquerry

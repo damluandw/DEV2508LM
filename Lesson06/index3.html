@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài tập</title>
+    </head>
+    <body>
+        <!-- 
+        1. Nhập tên tuổi của bạn rồi in ra ngoài 
+        màn hình hoặc consolog
+        2. Nhập hoặc khai báo 1 phương trình bậc 1 bất kỳ.
+        Xây dựng hàm để giải phương trình bậc 1
+        3. Nhập hoặc khai báo 2 phương trình bậc 2 bất kỳ.
+        Xây dựng hàm để giải phương trình bậc 2
+        4. Nhập vào 1 số bất kỳ in ra ngoài màn hình các số từ 0
+        nhỏ hơn số vừa nhập
+        5. Nhập vào 1 số bất kỳ in ra ngoài màn hình các số nguyên
+        tố nhở hơn số vừa nhập
+
+    -->
+        <script>
+        // ax+b =0
+        var number1 = 3
+        var  number2 = 5
+        // if(a == 0 ){
+        //     if(b == 0){
+        //         document.writeln("Phương trình có vô số nghiệm")
+        //     }else{
+        //          document.writeln("Phương trình có vô nghiệm")
+        //     }
+        // }else{
+        //     document.writeln("Phương trình có nghiệm:", -b/a)
+        // }
+        function ptb1(a,b){
+            if(a == 0 ){
+                if(b == 0){
+                    document.writeln("Phương trình có vô số nghiệm<br/>")
+                }else{
+                    document.writeln("Phương trình vô nghiệm<br/>")
+                }
+            }else{
+                document.writeln("Phương trình có nghiệm:", -b/a,"<br/>")
+            }
+        }
+
+        function _ptb1(a,b){
+            if(a == 0 && b == 0 ){
+                document.writeln("Phương trình có vô số nghiệm<br/>")
+            } else if(a == 0 && b != 0){
+                document.writeln("Phương trình vô nghiệm<br/>")
+            }else{
+                document.writeln("Phương trình có nghiệm:", -b/a,"<br/>")
+            }
+        }
+
+        ptb1(number1,number2)
+        _ptb1(0,3)
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+1. Giới thiệu CSS
+2. Cách sử dụng CSS
+    - 3 Cách
+        + trong thẻ HTML
+        + trong file HTML
+        + ngoài file HTML
+3. Các cách tương tác giữa HTML và CSS
+- 4 cách:
+ + tên id
+ + tên class
+ + tên thẻ
+ + tên thuộc tính
+
+4. Bộ chọn CSS
++ *
++ tag
++ tag01 tag02
++ tag01>tag02
++ tag01+tag02
++ tag01~tag02
++ tag01,tag02
++ :hover
++ :before, :after
++ ....
+
+5. Cấp độ ưu tiên trong CSS
+- CSS viết sau sẽ được ưu tiên sử dụng
+- !important -> tên_id -> tên_class -> tên_thuộc_tính -> tên_thẻ
+- bộ chọn càng chi tiết hoặc càng gần đến thẻ thì càng được ưu tiên sử dụng
+
+6. Đơn vị
+- %, px, rem, em
+
+7. Mã màu:
+-  3 bảng màu:  rgb, tên_tiếng_anh, hex
+
+8. Responsive
+
+@media screen (min/max){
+
+}
+
+9. Thuộc tính CSS
+- display
+- color
+- background
+- font
+- text
+- style-list
+- padding/margin
+- position (top/left/right/bottom, z-index)
+- opacity
+- border
+- border-radius
+- width/height
+...
+
+=> Systax
+các_bộ_chọn_CSS{
+    tên_thuộc_tính_CSS: Giá_trị_thuộc_tính_CSS;
+    tên_thuộc_tính_CSS: Giá_trị_thuộc_tính_CSS;
+    tên_thuộc_tính_CSS: Giá_trị_thuộc_tính_CSS;
+    tên_thuộc_tính_CSS: Giá_trị_thuộc_tính_CSS;
+    tên_thuộc_tính_CSS: Giá_trị_thuộc_tính_CSS;
+}
