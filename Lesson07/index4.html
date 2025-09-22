@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <style>
+            .err{
+                color: red;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action>
+            <div>
+                <label for="username">username:</label>
+                <input  type="text" name="username" id="username">
+                <p id="err-email" class="err">Sai định dạng vui lòng nhập lại</p>
+            </div>
+            <div>
+                <label for="passwword">Passwword:</label>
+                <input type="password" name="passwword" id="passwword">
+            </div>
+            <input type="submit" name="submit" id="submit">
+        </form>
+        <script>
+                var elementUsername = document.getElementById("username")
+                var regxUsername = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+                elementUsername.addEventListener('blur', ()=>{
+                    var check = regxUsername.test(elementUsername.value)
+                    if(!check){
+                        // document.writeln("Sai định dạng email");
+                        document.getElementById("err-email").style.display = "block"
+                    }else{
+                         document.getElementById("err-email").style.display = "none"
+                    }
+                })
+        </script>
+    </body>
+</html>

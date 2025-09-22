@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM element - tương tác với thẻ HTML</title>
+</head>
+<body>
+    <input type="text" name="username" id="username" value="devmaster">
+    <p class="cl-red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nam facilis praesentium harum culpa eligendi cumque nostrum ab sint perferendis tenetur unde optio, assumenda adipisci hic commodi voluptatem minima dolore!</p>
+    <p class="cl-red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nam facilis praesentium harum culpa eligendi cumque nostrum ab sint perferendis tenetur unde optio, assumenda adipisci hic commodi voluptatem minima dolore!</p>
+    <script>
+        // Cách 1: Thông qua tên id của thẻ HTML
+        // systax: document.getElementById('tên_id')
+       var element = document.getElementById('username');
+       document.writeln("<br/>",element.value)
+        // Cách 2: Thông qua tên class của thẻ HTML
+        // systax: document.getElementsByClassName('tên_class')
+        document.getElementsByClassName('cl-red');
+         // Cách 3: Thông qua tên thẻ HTML
+        // systax: document.getElementsByTagName('tên_thẻ_HTML')
+        document.getElementsByTagName('p');
+        // Cách 4: Thông qua cú pháp CSS selector
+        // systax: document.querySelectorAll('CSS_Selector')
+        document.querySelectorAll("p.cl-red")
+    </script>
+</body>
+</html>

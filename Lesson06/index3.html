@@ -16,7 +16,7 @@
         4. Nhập vào 1 số bất kỳ in ra ngoài màn hình các số từ 0
         nhỏ hơn số vừa nhập
         5. Nhập vào 1 số bất kỳ in ra ngoài màn hình các số nguyên
-        tố nhở hơn số vừa nhập
+        tố nhỏ hơn số vừa nhập
 
     -->
         <script>
@@ -56,6 +56,30 @@
 
         ptb1(number1,number2)
         _ptb1(0,3)
+
+        var number =50
+        
+        
+        function timSoNguyenTo(a){
+            document.writeln("<br/>Các số nguyên tố nhỏ hơn ",a, " là: ")
+            //vòng lặp để lấy giá trị nhỏ hơn number
+            for(let i = 2; i<= a;i++ ){
+                let check =true;
+                // vòng lặp để kiểm tra từng giá trị
+                for(let j=2; j<i/2 ;j++){
+                    //kiểm tra giá trị xem có phải là số nguyên tố hay k
+                    if(i%j==0){
+                        check =false;
+                        break;
+                    }
+                }
+                if(check){
+                    document.writeln(i,",")
+                }                
+            }        
+        }
+        timSoNguyenTo(number)
+        timSoNguyenTo(60)
 
     </script>
     </body>

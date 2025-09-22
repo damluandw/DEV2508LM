@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đối tượng- Object</title>
+</head>
+<body>
+    <script>
+        // Đối tượng
+        // 1. Khai báo
+        // var tên_đối_tượng = new Object();
+        // var tên_đối_tượng = {};
+        var obj = {}
+        // Khai báo thuộc tính/gán của đối tượng
+        // tên_object.tên_thuộc_tính = "giá trị";
+        obj.name = "Devmaster";
+        obj.age = 18;
+        obj.address = "25 Vũ ngọc phan";
+        
+
+        var obj2 = {
+            name: "",
+            age: 0,
+            address: "25 Vũ ngọc phan",
+            hanhdong: function (){
+                alert("Chào mừng bạn đến với devmaster -" + this.address);
+            }
+        }
+        // Lấy giá trị
+        // tên_object.tên_thuộc_tính
+        document.writeln(obj.address)
+        obj2.hanhdong()
+    </script>
+</body>
+</html>

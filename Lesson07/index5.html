@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng nhập</title>
+        <style>
+            .err{
+                color: red;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action>
+            <div>
+                <label for="username">username:</label>
+                <input type="text" name="username" id="username">
+                <p class="err">Sai định dạng email vui lòng nhập
+                    lại</p>
+            </div>
+            <div>
+                <label for="passwword">Passwword:</label>
+                <input type="password" name="passwword" id="passwword">
+                <p class="err">Sai định dạng password vui lòng nhập
+                    lại</p>
+            </div>
+            <input type="submit" name="submit" id="submit">
+        </form>
+
+        <script>
+                var elementUsername = document.getElementById("username")
+                var regxUsername = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+                var elementPassword = document.getElementById("passwword")
+                var regxPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+                // elementUsername.addEventListener('blur', ()=>{
+                //     if(regxUsername.test(elementUsername.value)){
+                //         elementUsername.nextElementSibling.style.display ="none"
+                //     }else{
+                //         elementUsername.nextElementSibling.style.display ="block"
+                //     }
+                // })
+                function checkValue(elmt, regex){
+                    elmt.addEventListener('blur', ()=>{
+                        if(regex.test(elmt.value)){
+                            elmt.nextElementSibling.style.display ="none"
+                        }else{
+                            elmt.nextElementSibling.style.display ="block"
+                        }
+                    })
+                }
+                checkValue(elementUsername, regxUsername)
+                checkValue(elementPassword, regxPassword)
+        </script>
+    </body>
+</html>
