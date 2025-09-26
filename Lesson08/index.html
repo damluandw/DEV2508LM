@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sử dụng jquery</title>
+    </head>
+    <body>
+        <h3>Devmaster jquery 1</h3>
+        <h3>Devmaster jquery 2</h3>
+        <h3 class="title-show">Devmaster jquery 3</h3>
+
+        <!-- Cách 1: Sử dụng file -->
+        <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+        <!-- Cách 2: Sử dụng thông qua thư viện onl -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            // Sử dụng Jquery
+            // Systax: $('CSS_Selector').action()
+            $('h3').hide();
+            $('.title-show').show()
+            $('h3').css('color','red')
+            // document.getElementsByTagName('h3')[0].style.display ='none'
+            // document.getElementsByTagName('h3')[1].style.display ='none'
+            // document.getElementsByTagName('h3')[2].style.display ='none'
+        </script>
+    </body>
+</html>

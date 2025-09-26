@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng nhập</title>
+        <style>
+            .err{
+                color: red;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action>
+            <div>
+                <label for="username">username:</label>
+                <input type="text" name="username" id="username">
+                <p class="err">Sai định dạng vui lòng nhập lại</p>
+            </div>
+            <div>
+                <label for="passwword">Passwword:</label>
+                <input type="password" name="passwword" id="passwword">
+                <p class="err">Sai định dạng vui lòng nhập lại</p>
+            </div>
+            <input type="submit" name="submit" id="submit">
+        </form>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script>
+            
+            //    var elementUsername = $("#username")
+                // var regxUsername = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+                // var elementPassword = $("#passwword")
+                // var regxPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+                // function checkValue(elmt, regex){
+                //     elmt.on('blur', ()=>{
+                //         if(regex.test(elmt.val())){
+                //             elmt.siblings('.err').hide()
+                //         }else{
+                //             elmt.siblings('.err').show()
+                //         }
+                //     })
+                // }
+                // checkValue(elementUsername, regxUsername)
+                // checkValue(elementPassword, regxPassword)
+
+                // $('input').on('blur',(evt)=>{
+                //     console.log(this.id)
+                // })
+                $(document).ready( function(){
+                    function checkValue(elmt, regex){
+                        if(regex.test(elmt.val())){
+                            elmt.siblings('.err').hide()
+                        }else{
+                            elmt.siblings('.err').show()
+                        }
+                    }
+                    $('input').blur(function(){
+                        console.log(this.id)
+                        var id = this.id
+                        var elmt = $('#'+id)
+                        var regex =''    
+                        if(id == 'username'){
+                            regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+                        }else{
+                            regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+                        }
+                        checkValue(elmt, regex)
+                    })
+                })
+                 
+
+        </script>
+    </body>
+</html>
