@@ -1,0 +1,47 @@
+1. HTML
+    - Bố cục trong HTML (thẻ bố cục)
+    - Các thẻ form, input, table,...
+    - Phân biệt thẻ inline và thẻ khối
+    - Thẻ đơn và thẻ kép
+2. CSS
+
+2.1. Các cách tương tác CSS với thẻ HTML - 3 cách
+2.2. Các thẻ cú pháp thẻ tương tác CSS với HTML
+2.3. Mức độ ưu tiên trong CSS - 3 
+2.4. Các thuộc tính và giá trị của thuộc tính trong CSS
+2.5. Bảng màu
+2.6. Đơn vị kích thước
+
+3. JavaCsript
+- Ngôn ngữ lập trình
+- Khai báo, get và set:  biến, hàm, mảng, object,...
+- Vòng lặp: for, do while, while,...
+- Cấu trúc điều khiển: if else, case when
+
+4. DOM/Jquerry
+-  dùng để tương tác giữa ngôn ngữ lập trình JavaCsript và CSS, HTML
+- cú pháp để sử dụng: document/$()
+- một số sự kiện: onclick, ondbclick, onblur,..
+- addlistenenvent/on: click, dbclick, blur,..
+- nav: parent, siblings, chilrent
+- Thay giá trị HTML: HTML/ innerHTML,...
+- Thay giá trị CSS: display.thuộc_tính =???/ css("tên_thuộc_tính","giá_trị_thuộc_tính")
+
+- regularExecption - check giá trị cho input
+- localStorage/sessionStorage/cookie - lưu dữ liệu tại máy client
+- axio jquerry - lấy dữ liệu từ API
+
+5. Bootstrap - thư viện CSS và jquerry
+- học thuộc tên class có sẵn và hiểu class làm nhiệm vụ gì?
+- học tham sô: sm, xs,xl, lg,xxl,... cho màn hình nào?
+- row-col: 
+
+-- cú pháp chung: 
+            tên_thuộc_tính_CSS-kích_thước_màn_hình-giá_trị_thuộc_tính_CSS
+
+6. Photoshop
+
+- cắt ảnh - 3 cách - 2 cách chính
+- đo màu
+- lấy font và cỡ chứ
+- đo khoảng cách
