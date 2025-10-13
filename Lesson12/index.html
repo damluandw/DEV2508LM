@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trang chủ</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+        <!-- Begin Header  -->
+        <header>
+            <div>
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <div id="header-logo">
+                                <img class="w-100" class="w-100"
+                                    src="imgs/logo.png"
+                                    alt="logo">
+                            </div>
+                            <button class="navbar-toggler" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#header-nav"
+                                aria-controls="header-nav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div
+                                class="collapse navbar-collapse justify-content-lg-end"
+                                id="header-nav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item p-4">
+                                        <a
+                                            class="p-0 text-center nav-link text-black text-uppercase active"
+                                            aria-current="page"
+                                            href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item p-4">
+                                        <a
+                                            class="p-0 text-center nav-link text-black text-uppercase"
+                                            href="#">Giới thiệu</a>
+                                    </li>
+                                    <li class="nav-item p-4">
+                                        <a
+                                            class="p-0 text-center nav-link text-black text-uppercase"
+                                            href="#">Sản phẩm</a>
+                                    </li>
+                                    <li class="nav-item p-4">
+                                        <a
+                                            class="p-0 text-center nav-link text-black text-uppercase"
+                                            href="#">Tin tức</a>
+                                    </li>
+                                    <li class="nav-item p-4">
+                                        <a
+                                            class="p-0 text-center nav-link text-black text-uppercase"
+                                            href="#">Đối tác</a>
+                                    </li>
+                                    <li class="nav-item p-4">
+                                        <a
+                                            class="p-0 text-center nav-link text-black text-uppercase"
+                                            href="#">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- End Header  -->
+        <!-- Begin Banner -->
+        <section id="banner">
+            <!-- <img src="imgs/banner.jpg" alt="banner"> -->
+            <div class="container">
+                <div>
+                    <h3 class="cl-2">Thế giới nội thất số 1 việt nam <br>
+                        <span class="cl-1">Hoàng Hoan</span></h3>
+                    <p>
+                        Sứ mệnh của chúng tôi là kết hợp hài hòa giữa ý tưởng và
+                        mong muốn của khách hàng, đem lại những phút giây thư
+                        giãn tuyệt vời bên gia đình và những người thân yêu.
+                    </p>
+                    <button>Liên hệ ngay</button>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner -->
+        <!-- Begin Category -->
+        <section id="category">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 d-flex justify-content-center">
+                        <div class="box-category">
+                            <div class="category-img">
+                                <img class="w-100"
+                                    src="imgs/danhmuc/dm_phongkhach.jpg"
+                                    alt="dm_phongkhach">
+                            </div>
+                            <h3 class="text-center">
+                                <a href="#">Phòng khách</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <div class="box-category">
+                            <div class="category-img">
+                                <img class="w-100"
+                                    src="imgs/danhmuc/dm_phongngu.jpg"
+                                    alt="dm_phongngu">
+                            </div>
+                            <h3 class="text-center">
+                                <a href="#">Phòng ngủ</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <div class="box-category">
+                            <div class="category-img">
+                                <img class="w-100"
+                                    src="imgs/danhmuc/dm_phongbep.jpg"
+                                    alt="dm_phongbep">
+                            </div>
+                            <h3 class="text-center">
+                                <a href="#">Phòng bếp</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <div class="box-category">
+                            <div class="category-img">
+                                <img class="w-100"
+                                    src="imgs/danhmuc/dm_phongtam.jpg"
+                                    alt="dm_phongtam">
+                            </div>
+                            <h3 class="text-center">
+                                <a href="#">Phòng tắm</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <div class="box-category">
+                            <div class="category-img">
+                                <img class="w-100"
+                                    src="imgs/danhmuc/dm_treem.jpg"
+                                    alt="dm_treem">
+                            </div>
+                            <h3 class="text-center">
+                                <a href="#">Trẻ em</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <div class="box-category">
+                            <div class="category-img">
+                                <img class="w-100"
+                                    src="imgs/danhmuc/dm_vanphong.jpg"
+                                    alt="dm_vanphong">
+                            </div>
+                            <h3 class="text-center">
+                                <a href="#">Văn phòng</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <div class="box-category">
+                            <div class="category-img">
+                                <img class="w-100"
+                                    src="imgs/danhmuc/dm_cauthang.jpg"
+                                    alt="dm_cauthang">
+                            </div>
+                            <h3 class="text-center">
+                                <a href="#">Cầu thang</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <div class="box-category">
+                            <div class="category-img">
+                                <img class="w-100"
+                                    src="imgs/danhmuc/dm_dotrangtri.jpg"
+                                    alt="dm_dotrangtri">
+                            </div>
+                            <h3 class="text-center">
+                                <a href="#">Đồ trang trí</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Category -->
+        <!-- Begin Product Hot -->
+        <section id="product">
+            <div class="container">
+                <h2>Sản phẩm nổi bật</h2>
+                <div id="list-product">
+                    <div class="product-box">
+                        <div class="product-img m-auto">
+                            <img class="w-100" src="imgs/sanpham/sp-01.jpg"
+                                alt="sp-01">
+                        </div>
+                        <div class="product-content text-center">
+                            <h3 class="mb-0"><a href="#">Giường châu âu</a></h3>
+                            <p class="product-start mb-0">
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                            </p>
+                            <p class="product-size">Size lớn, Mô tả</p>
+                            <p class="product-price">8.990.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img m-auto">
+                            <img class="w-100" src="imgs/sanpham/sp-02.jpg"
+                                alt="sp-01">
+                        </div>
+                        <div class="product-content text-center">
+                            <h3 class="mb-0"><a href="#">Giường châu âu</a></h3>
+                            <p class="product-start mb-0">
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                            </p>
+                            <p class="product-size">Size lớn, Mô tả</p>
+                            <p class="product-price">8.990.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img m-auto">
+                            <img class="w-100" src="imgs/sanpham/sp-03.jpg"
+                                alt="sp-01">
+                        </div>
+                        <div class="product-content text-center">
+                            <h3 class="mb-0"><a href="#">Giường châu âu</a></h3>
+                            <p class="product-start mb-0">
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                            </p>
+                            <p class="product-size">Size lớn, Mô tả</p>
+                            <p class="product-price">8.990.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img m-auto">
+                            <img class="w-100" src="imgs/sanpham/sp-04.jpg"
+                                alt="sp-01">
+                        </div>
+                        <div class="product-content text-center">
+                            <h3 class="mb-0"><a href="#">Giường châu âu</a></h3>
+                            <p class="product-start mb-0">
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                            </p>
+                            <p class="product-size">Size lớn, Mô tả</p>
+                            <p class="product-price">8.990.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img m-auto">
+                            <img class="w-100" src="imgs/sanpham/sp-02.jpg"
+                                alt="sp-01">
+                        </div>
+                        <div class="product-content text-center">
+                            <h3 class="mb-0"><a href="#">Giường châu âu</a></h3>
+                            <p class="product-start mb-0">
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                            </p>
+                            <p class="product-size">Size lớn, Mô tả</p>
+                            <p class="product-price">8.990.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img m-auto">
+                            <img class="w-100" src="imgs/sanpham/sp-03.jpg"
+                                alt="sp-01">
+                        </div>
+                        <div class="product-content text-center">
+                            <h3 class="mb-0"><a href="#">Giường châu âu</a></h3>
+                            <p class="product-start mb-0">
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                            </p>
+                            <p class="product-size">Size lớn, Mô tả</p>
+                            <p class="product-price">8.990.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img m-auto">
+                            <img class="w-100" src="imgs/sanpham/sp-02.jpg"
+                                alt="sp-01">
+                        </div>
+                        <div class="product-content text-center">
+                            <h3 class="mb-0"><a href="#">Giường châu âu</a></h3>
+                            <p class="product-start mb-0">
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                            </p>
+                            <p class="product-size">Size lớn, Mô tả</p>
+                            <p class="product-price">8.990.000 VNĐ</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-img m-auto">
+                            <img class="w-100" src="imgs/sanpham/sp-01.jpg"
+                                alt="sp-01">
+                        </div>
+                        <div class="product-content text-center">
+                            <h3 class="mb-0"><a href="#">Giường châu âu</a></h3>
+                            <p class="product-start mb-0">
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                                <span><i
+                                        class="cl-1 fa-solid fa-star"></i></span>
+                            </p>
+                            <p class="product-size">Size lớn, Mô tả</p>
+                            <p class="product-price">8.990.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Product Hot -->
+
+        <!-- Begin Infor  -->
+        <section id="infor">
+            <div class="container">
+                <div id="about-us">
+                    <h2>Về Chúng tôi</h2>
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-end">
+                            <div class="about-us-img-left">
+                                <img class="w-100"
+                                    src="imgs/infor/ve-chung-toi.jpg"
+                                    alt="ve-chung-toi">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="about-us-right">
+                                <h3>
+                                    Nội thất <span>Hoàng Hoan</span>
+                                    <br>
+                                    UY TÍN SONG HÀNH CHẤT LƯỢNG
+                                </h3>
+                                <p>Nội thất <span>Hoàng Hoan</span> chúng tôi tự
+                                    hào là đứa con
+                                    tinh thần ra đời sau hơn 30 năm hoạt động
+                                    trong
+                                    lĩnh vực kinh doanh đồ gỗ nội thất với
+                                    thương
+                                    hiệu ĐỒ GỖ HOÀNG HOAN nổi tiếng.
+                                </p>
+                                <p>
+                                    Tài nguyên của chúng tôi là đội ngũ kiến
+                                    trúc sư
+                                    tốt nghiệp ĐH Kiến Trúc Hà Nội với nhiều năm
+                                    kinh nghiệm, luôn tràn đầy nhiệt huyết và
+                                    sức
+                                    sáng tạo của tuổi trẻ. Thế mạnh của chúng
+                                    tôi là
+                                    sở hữu xưởng nội thất hơn 10.000m2 tại Hà
+                                    Nội
+                                    sản xuất đa dạng các sản phẩm với giá cả
+                                    luôn
+                                    cạnh tranh.
+                                </p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="about-us-img-right">
+                                        <img src="imgs/infor/ve-chung-toi-1.jpg"
+                                            alt="ve-chung-toi-1">
+                                    </div>
+                                    <div class="about-us-img-right">
+                                        <img src="imgs/infor/ve-chung-toi-2.jpg"
+                                            alt="ve-chung-toi-2">
+                                    </div>
+                                    <div class="about-us-img-right">
+                                        <img src="imgs/infor/ve-chung-toi-3.jpg"
+                                            alt="ve-chung-toi-3">
+                                    </div>
+                                    <div class="about-us-img-right">
+                                        <img src="imgs/infor/ve-chung-toi-4.jpg"
+                                            alt="ve-chung-toi-4">
+                                        <a href="#">Xem thêm ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="why-is">
+                    <h2>Tại sao nên chọn Hoàng hoan</h2>
+                    <div class="d-flex justify-content-center flex-wrap ">
+                        <div class="why-box">
+                            <div class="why-img">
+                                <img class="w-100" src="imgs/infor/chon-1.jpg"
+                                    alt="chon-1">
+                            </div>
+                            <div>
+                                <h4>Chính sách giá</h4>
+                                <p>Tốt nhất và công khai giá trên
+                                    website</p>
+                            </div>
+                        </div>
+                        <div class="why-box">
+                            <div class="why-img">
+                                <img class="w-100" src="imgs/infor/chon-2.jpg"
+                                    alt="chon-2">
+                            </div>
+                            <div>
+                                <h4>Sản xuất</h4>
+                                <p>Trực tiếp sản xuất bởi đội ngũ nhân viên
+                                    hàng đầu</p>
+                            </div>
+                        </div>
+                        <div class="why-box">
+                            <div class="why-img">
+                                <img class="w-100" src="imgs/infor/chon-3.jpg"
+                                    alt="chon-3">
+                            </div>
+                            <div>
+                                <h4>Chất lượng</h4>
+                                <p>Dịch vụ bảo hành sản phẩm tốt nhất khu
+                                    vực</p>
+                            </div>
+                        </div>
+                        <div class="why-box">
+                            <div class="why-img">
+                                <img class="w-100" src="imgs/infor/chon-1.jpg"
+                                    alt="chon-1">
+                            </div>
+                            <div>
+                                <h4>Chính sách giá</h4>
+                                <p>Tốt nhất và công khai giá trên
+                                    website</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Infor  -->
+
+        <!-- Begin news -->
+
+        <section id="news">
+            <div class="container">
+                <h2>Tin tức</h2>
+                <div class="d-flex justify-content-center">
+                    <div id="news-left">
+                        <div>
+                            <div class="news-img">
+                                <img class="w-100" src="imgs/tintuc-1.jpg"
+                                    alt="tintuc-1">
+                            </div>
+                            <div class="news-content">
+                                <h4><a href="#">Cách chọn Sofa cho phòng khách
+                                        nhà
+                                        bạn thêm phần sang trọng</a></h4>
+                                <p>Home furniture, interior design furniture,
+                                    bedroom furniture, wooden furniture - find
+                                    photography of them all in our gallery of
+                                    furniture photos. Everything is licensed
+                                    under
+                                    the free Pexels license. Find the best stock
+                                    free photos here.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="news-right">
+                        <div class="news-box">
+                            <div class="d-flex justify-content-between">
+                                <div class="news-img">
+                                    <img class="w-100" src="imgs/tintuc-2.jpg"
+                                        alt="tintuc-2">
+                                </div>
+                                <div class="news-content">
+                                    <h4><a href="#">Trang trí phòng khách cho
+                                            thêm năng động</a></h4>
+                                    <p>Home furniture, interior design
+                                        furniture, bedroom furniture, wooden
+                                        furniture - find photography of them all
+                                        in our gallery of furniture photos.
+                                        Everything is licensed under the free
+                                        Pexels license. Find the best stock free
+                                        photos here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-box">
+                            <div class="d-flex justify-content-between">
+                                <div class="news-img">
+                                    <img class="w-100" src="imgs/tintuc-3.jpg"
+                                        alt="tintuc-3">
+                                </div>
+                                <div class="news-content">
+                                    <h4><a href="#">Trang trí phòng khách cho
+                                            thêm năng động</a></h4>
+                                    <p>Home furniture, interior design
+                                        furniture, bedroom furniture, wooden
+                                        furniture - find photography of them all
+                                        in our gallery of furniture photos.
+                                        Everything is licensed under the free
+                                        Pexels license. Find the best stock free
+                                        photos here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-box">
+                            <div class="d-flex justify-content-between">
+                                <div class="news-img">
+                                    <img class="w-100" src="imgs/tintuc-4.jpg"
+                                        alt="tintuc-4">
+                                </div>
+                                <div class="news-content">
+                                    <h4><a href="#">Trang trí phòng khách cho
+                                            thêm năng động</a></h4>
+                                    <p>Home furniture, interior design
+                                        furniture, bedroom furniture, wooden
+                                        furniture - find photography of them all
+                                        in our gallery of furniture photos.
+                                        Everything is licensed under the free
+                                        Pexels license. Find the best stock free
+                                        photos here.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p><a href="#" class="text-uppercase cl-1 fs-3">Xem thêm <span class="fs-4"><i class="fa-solid fa-arrow-right"></i></span></a></p>
+                    </div>
+                </div>
+            </div>
+ 
+        </section>
+        <!-- End news -->
+
+        <!-- Begin Footer  -->
+        <footer class="text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <h4>Thông tin chung</h4>
+                        <p class="fs-4 text-uppercase">Công ty hoàng hoan</p>
+                        <address>
+                            <p><span><i
+                                        class="fa-solid fa-phone"></i></span>0999.999.999</p>
+                            <p><span><i
+                                        class="fa-solid fa-envelope"></i></span>cskh@hoanghoan.com.vn</p>
+                            <p><span><i
+                                        class="fa-solid fa-location-dot"></i></span>Số
+                                1 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                        </address>
+                    </div>
+                    <div
+                        class="col-lg-4 col-sm-6 d-flex justify-content-lg-center justify-content-sm-end justify-content-start">
+                        <div>
+                            <h4>Về chúng tôi</h4>
+                            <nav>
+                                <ul class="p-0">
+                                    <li><a class="text-white" href="#">Giới
+                                            thiệu</a></li>
+                                    <li><a class="text-white" href="#">Sản
+                                            phẩm</a></li>
+                                    <li><a class="text-white" href="#">Tin
+                                            tức</a></li>
+                                    <li><a class="text-white" href="#">Đối
+                                            tác</a></li>
+                                    <li><a class="text-white" href="#">Liên
+                                            hệ</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 d-flex justify-content-lg-end justify-content-start">
+                        <div>
+                            <h4>kết nối với chúng tôi</h4>
+                            <div class="d-flex">
+                                <div class="footer-logo">
+                                    <img class="w-100" src="imgs/logo-fb.png"
+                                        alt="logo-fb">
+                                </div>
+                                <div class="footer-logo">
+                                    <img class="w-100" src="imgs/logo-zl.png"
+                                        alt="logo-z l">
+                                </div>
+                                <div class="footer-logo">
+                                    <img class="w-100" src="imgs/logo-mail.png"
+                                        alt="logo-mail">
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="footer-logo">
+                                    <img class="w-100"
+                                        src="imgs/logo-dathongbao.png"
+                                        alt="logo-dathongbao">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer  -->
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+                $('#list-product').slick({
+                dots: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows:true,
+                prevArrow: '<button type="button" class="slick-prev"><</button>',
+                nextArrow: '<button type="button" class="slick-next">></button>',
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                    },
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+                });
+        </script>
+    </body>
+
+</html>

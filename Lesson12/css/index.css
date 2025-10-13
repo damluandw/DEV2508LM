@@ -1,0 +1,375 @@
+/* Begin Banner */
+#banner {
+    margin-top: 4rem;
+    background-image: url('../imgs/banner.jpg');
+    height: 56.625rem;
+}
+
+#banner .container>div {
+    padding-top: 12.5rem;
+    margin-left: 3.25rem;
+}
+
+#banner h3,
+#banner h3 span {
+    font-family: 'Gotham-Ultra';
+    font-size: 2.9rem;
+    text-transform: uppercase;
+}
+
+#banner p {
+    max-width: 34.875rem;
+    text-align: justify;
+}
+
+#banner button {
+    background-color: #bd945f;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1.25rem 2rem;
+    font-family: 'Gotham-Ultra';
+    font-size: 1.25rem;
+}
+
+/* End Banner */
+/* Begin Category */
+#category {
+    background-color: #f3f3f3;
+    height: 29.5rem;
+}
+
+#category .category-img {
+    max-width: 10.75rem;
+}
+
+#category h3 a {
+    font-family: 'Gotham-Ultra';
+    color: #2c2e53;
+}
+
+#category .container {
+    position: relative;
+}
+
+
+#category .container>div {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: -3.75rem;
+}
+
+#category .box-category {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* End Category */
+
+/* Begin Product */
+#product {
+    background-color: #f3f3f3;
+    padding-top: 6.25rem;
+}
+
+#product h2 {
+    font-family: 'Gotham-Ultra';
+    text-align: center;
+    color: #2c2e53;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+#product h2::after {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 9px;
+    background-color: #bd945f;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-box h3>a {
+    font-family: 'Gotham-Ultra';
+    color: #2c2e53;
+    text-transform: uppercase;
+}
+
+.product-size,
+.product-price {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+}
+
+.product-size {
+    color: #cfcfcf;
+}
+
+.product-img {
+    max-width: 17rem;
+}
+
+#list-product {
+    position: relative;
+}
+
+#list-product .slick-arrow {
+    position: absolute;
+    width: 2.75rem;
+    height: 2.75rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #bd945f;
+    color: #fff;
+    font-size: 2rem;
+    top: 32%;
+    z-index: 2;
+}
+
+#list-product .slick-prev {
+    left: -2rem;
+}
+
+#list-product .slick-next {
+    right: -2rem;
+}
+
+/* End Product */
+
+
+/* Begin Infor  */
+#infor {
+    background-image: url('../imgs/infor/bg_info.jpg');
+    height: 67.5rem;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+}
+
+#infor::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 67.5rem;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* #infor>#about-us{
+    position: relative;
+    z-index: 2;
+} */
+
+#infor h2,
+#why-is h2 {
+    font-family: 'Gotham-Ultra';
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+#infor h2::after,
+#why-is h2::after {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 9px;
+    background-color: #bd945f;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#infor .row {
+    position: relative;
+    z-index: 2;
+}
+
+#about-us h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+#about-us h3>span {
+    font-family: 'Gotham-Ultra';
+    font-size: 1.5rem;
+}
+
+#about-us p {
+    color: #fff;
+    font-size: 0.75rem;
+    text-align: justify;
+}
+
+#about-us p>span {
+    font-family: 'Gotham-Ultra';
+}
+
+#about-us .about-us-img-left {
+    max-width: 35.75rem;
+    margin-right: 1rem;
+
+}
+
+
+#about-us .about-us-right {
+    max-width: 35.125rem;
+    margin-left: 1rem;
+
+}
+
+#about-us .about-us-img-right {
+    position: relative;
+}
+
+#about-us .about-us-img-right a {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.875rem;
+}
+
+#about-us,
+#why-is {
+    padding-top: 6.25rem;
+    position: relative;
+    z-index: 3;
+}
+
+#why-is h4 {
+    font-family: 'Gotham-Ultra';
+    color: #bd945f;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#why-is p {
+
+    font-size: 0.875rem;
+}
+
+#why-is .why-box {
+    width: 35.75rem;
+    background-color: #fff;
+    display: flex;
+    margin: 0 1rem 1.75rem;
+    padding: 2rem;
+}
+
+#why-is .why-img {
+    margin-right: 2rem;
+}
+
+
+
+/* End Infor  */
+
+
+
+/*  */
+#news {
+    background-color: #f3f3f3;
+    padding-top: 6.25rem;
+}
+
+#news h2 {
+    font-family: 'Gotham-Ultra';
+    text-align: center;
+    color: #2c2e53;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+#news h2::after {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 9px;
+    background-color: #bd945f;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#news-left>div {
+    max-width: 40.75rem;
+    position: relative;
+}
+
+#news-right .news-box{
+    width: 29.875rem;
+}
+
+#news-left .news-content {
+    background-color: #bd945f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#news-left h4 {
+    margin: 1.5rem 2rem 0.75rem;
+}
+
+#news-left h4>a {
+    color: #fff;
+    font-size: 1.5rem;
+
+}
+
+#news-left p {
+    font-family: 'Gotham-Thin';
+    font-size: 0.75rem;
+    margin: 0rem 2rem 1.5rem;
+    text-align: justify;
+}
+
+#news-right .news-content {
+    max-width: 17.25rem;
+}
+#news-right .news-img{
+    max-width: 10.75rem;
+}
+
+#news-right .news-content h4>a {
+    color: #bd945f;
+    font-size: 1.125rem;
+    line-height: 1.2;
+}
+#news-right .news-content p {
+    font-family: 'Gotham-Thin';
+    font-size: 0.75rem;
+    text-align: justify;
+    line-height: 1;
+    margin-bottom: 0;
+} 
+
+
+#news-left{
+    margin-right: 3rem;
+}
+
+#news-right .news-box{
+    margin-bottom: 1.5rem;
+}
+/*  */
